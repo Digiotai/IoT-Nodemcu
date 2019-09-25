@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    
+     <style>
+     
+     input[type=text], select {
+  width: 150px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+     }
+     
+     input[type=submit] {
+  width: 200px;
+  background-color: #006cfb;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ font-weight: bold;
+ font-size: 18px;
+}
+
+input[type=submit]:hover {
+  background-color: #62A1F4;
+}
+        
+        label {
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        footer {
+            background:#006cfb;
+		width:100%;
+		height:100px;
+		position:absolute;
+		bottom:0;
+		left:0;
+        }
+        
+        div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin-top: 30px;
+            
+        }
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+ 
+}
+
+
+     </style>
+    
+    <head>
+        
+<title>Temperature & Humidity</title>
+
+</head>
+<body bgcolor="#ffffff">
+    <a href="https://www.Digiotai.com" target="_blank"> <IMG SRC="Digotai Logo Mobile.png"  class="center" ALT="www.digiotai.com" WIDTH=200 HEIGHT=120>
+        </a>
+   
+    
+    
+    <div>
+    <form method="post" action="connect.php">
+        
+         <h2 style="font-family: Helvetica;color: black;">ESP12E NodeMCU Temperature &amp; Humidity Sensor From PHP API</h2>
+        
+        <label for="fname">Temperature:</label>
+         <input required type="text" id="fname" name="Temperature" >
+    <br>
+    <br>
+        <label for="fname">Humidity:</label>
+        <input required type="text" id="fname" name="Humidity" >
+    <br>
+    <br>
+        <input type="submit" value="Submit">
+        
+        </form>
+        
+        <form action="data.php">
+         <input type="Submit" value="Display">
+         </form>
+         
+    </div>
+    <footer class="footer">
+		<center>
+			<h2 style="font-family: Helvetica;color: white; margin-top: 50px; font-size: 20px">Copyright @ DIGIOTAI | Powered by Arc Web Solutions</h2>
+		</center> 
+	</footer>
+</body>
+</html>
